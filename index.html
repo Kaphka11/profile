@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Card</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: #f3f3f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      width: 90%;
+      max-width: 400px;
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+    .card img.main-photo {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .info {
+      padding: 20px;
+      position: relative;
+    }
+
+    .info img.avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      position: absolute;
+      top: -30px;
+      left: 20px;
+      border: 3px solid #fff;
+    }
+
+    .info .name {
+      margin-left: 70px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .info .job {
+      font-size: 14px;
+      color: #666;
+      margin-left: 0px;
+    }
+
+    .info .location {
+      font-size: 13px;
+      color: #aaa;
+      margin-left: 0px;
+    }
+
+    .about-panel,
+    .spotify-panel,
+    .bluenix-panel {
+      background-color: #f3f3f3;
+      border-radius: 10px 10px 70px 10px;
+      margin-top: 25px;
+      box-shadow: 0 5px 0px #ccc;
+    }
+
+    .bluenix-panel {
+      box-shadow: 0 5px 0px #1800AD;
+    }
+
+    .section-title {
+      padding-top: 12px;
+      padding-left: 14px;
+      font-size: 13px;
+      font-weight: bold;
+      color: #666;
+    }
+
+    .about-text {
+      padding: 12px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .media-image {
+      border-radius: 10px 10px 0 0;
+      width: 100%;
+    }
+
+    .media-icon {
+      display: flex;
+      align-items: center;
+      padding: 12px;
+      gap: 10px;
+    }
+
+    .media-icon img {
+      width: 20%;
+      border-radius: 5px;
+    }
+
+    .media-icon h3 {
+      font-size: 15px;
+      margin: 0;
+      color: #000;
+    }
+
+    .media-icon small {
+      color: #666;
+    }
+
+    .class-btn {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      background: black;
+      color: white;
+      border: none;
+      padding: 6px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      border-top: 1px solid #eee;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .stats img {
+      width: 24px;
+      height: 24px;
+      margin-bottom: 8px;
+    }
+
+    .stats small {
+      font-size: 13px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="background.jpg" alt="Main photo" class="main-photo" />
+
+    <div class="info">
+      <img src="avatar.jpg" alt="Avatar" class="avatar" />
+      <div class="name">Akiz_xyz_</div>
+      <div class="job">Ilustrator</div>
+      <div class="location">Tangsel, Indonesia</div>
+
+      <div class="about-panel">
+        <img class="media-image" src="pagani.jpg" alt="About Image" />
+        <div class="section-title"><small>About me</small></div>
+        <div class="about-text">
+          <p><small>I was born to make world better, satu langkah kecil membuatmu jauh lebih baik.</p></br>
+          <p>Salam kenal teman-teman!</p></br></small></p>
+        </div>
+      </div>
+
+      <div class="spotify-panel">
+        <img class="media-image" src="anime.gif" alt="Spotify Anime" />
+        <div class="section-title"><small>Spotify</small></div>
+        <div class="media-icon">
+          <img src="ODNA.jpg" alt="Song Cover" />
+          <h3>ODNA<br><small>killanoia, ksmfx, djxxl</small></h3>
+        </div>
+      </div>
+
+      <div class="bluenix-panel">
+        <div class="section-title"><small>Websites</small></div>
+        <div class="media-icon">
+          <img src="bluenix.png" alt="Website Logo" />
+          <h3>Bluenix<br><small>On Development</small></h3>
+        </div>
+      </div>
+
+      <button class="class-btn">X PPLG</button>
+    </div>
+
+    <div class="stats">
+      <span>
+        <a href="https://discord.gg/wvfjQCBXVV">
+          <img src="discordicon.png" alt="Discord Icon" />
+      </span>
+      </a>
+      <small>Join our community</small></br>
+      <small>© 2025 Nirvana. All rights reserved.</small>
+      <small>End</small>
+    </div>
+  </div>
+</body>
+</html>
